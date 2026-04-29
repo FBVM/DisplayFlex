@@ -1,0 +1,71 @@
+ html {
+    background-image: url('imagenes/Fondo.png');
+    }
+    
+ 
+        body {
+            background-image: url('imagenes/Background1.jpg'); 
+        }
+.flex {          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 400px;
+        }
+ 
+        
+        .elemento {
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .elemento:hover {
+        animation: escalarAnim 3s ease-in-out;}
+            
+        img{
+            width: 25vw;
+            height: auto;
+        }
+
+
+         @media (min-width: 768px) {
+        body {
+            background-image: url('imagenes/Background2.jpg'); 
+        }
+        img{
+            padding-left: 2%;
+        }
+
+
+    }
+ 
+    @media (min-width: 1024px) {
+        body {
+            background-image: url('imagenes/Background3.jpg'); 
+        }
+
+
+    @keyframes escalarAnim {
+        10% {
+            transform: scale(1);
+        }
+ 
+        25% {
+            transform: scale(1.2);
+        }
+
+        50%{
+            transform: scale(0.8);
+        }
+
+        75% {
+            transform: scale(1.3);
+        }
+
+        0% {
+            transform: scale(1);
+        }
+    }
+ 
+    }
